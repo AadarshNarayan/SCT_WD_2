@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffeaec;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stopwatchcircle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #feb7da;
+}
+
+#display {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #63466e;
+}
+
+#display1 {
+    font-size: 1em;
+    color: #63466e;
+    margin-top: 5px; 
+}
+
+.control button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: #63466e;
+    transition: background-color 0.3s;
+}
+.control button:disabled {
+    background-color: #9E9E9E;
+    cursor: not-allowed;
+}
+.control button:hover:not(:disabled) {
+    background-color: #fe7686;
+}
+
+#laps {
+    margin-top: 20px;
+    padding: 0;
+    width: 200px;
+    max-height: 150px;
+    list-style: none;
+    overflow-y: auto;
+    border-top: 1px solid #c289b4;
+}
+#laps li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
